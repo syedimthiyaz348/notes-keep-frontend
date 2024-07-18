@@ -1,0 +1,47 @@
+.login-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 25%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px;
+    padding: 20px;
+}
+.login-input{
+    height: 35px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid grey;
+}
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.login-button{
+    height: 35px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #24a0ed;
+    color: #ffffff;
+    border: none;
+    margin-top: 5px;
+    padding: 10px;
+}
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,63 @@
+.below-header{
+    display: flex;
+}
+
+.data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.note-input-container{
+    height: 40px;
+    width: 60%;
+    box-shadow: 0px 0px 10px 0px;
+    border-radius: 8px;
+}
+
+.note-input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.textarea-note-input{
+    height: 100%;
+    max-height: 50px;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.new-note-input-container{
+    width: 60%;
+    box-shadow: 0px 0px 10px 0px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons button{
+    background-color: aquamarine;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: #000000;
+    font-weight: bold;
+}

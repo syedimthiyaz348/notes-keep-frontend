@@ -1,0 +1,28 @@
+.unordered{
+    padding-inline-start: 0px;
+    list-style-type: none;
+    width: 100%;
+    font-size: 20px;
+}
+
+.lists{
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: black;
+    text-decoration: dashed;
+}
+
+
+.side-menu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+    width: 250px;
+    max-width: 15%;
+    height: 100vh;
+}
