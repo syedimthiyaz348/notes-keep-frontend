@@ -4,6 +4,7 @@ import Home from './components/Home';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Trash from './components/Trash';
 import LoginPage from './components/Login';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
@@ -11,9 +12,9 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/login' Component={LoginPage}/>
-        <Route path='/' Component={Home}/>
-        <Route path='/archive' Component={Archive}/>
-        <Route path='/trash' Component={Trash}/>
+        <Route path='/' element={<ProtectedRoute Component={Home}/>}/>
+        <Route path='/archive' element={<ProtectedRoute Component={Archive}/>}/>
+        <Route path='/trash' element={<ProtectedRoute Component={Trash}/>}/>
       </Routes>
       </BrowserRouter>
     </div>

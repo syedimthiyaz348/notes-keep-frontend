@@ -18,7 +18,7 @@ const Header = () => {
             <input className='search-input' placeholder='Search' type='search' />
             <SearchIcon fontSize='medium'/>
             </div>
-            <button onClick={handlingLogout}>Logout</button>
+            <button className='logout-button' type='button' onClick={handlingLogout}>Logout</button>
         </nav>
     )
 }

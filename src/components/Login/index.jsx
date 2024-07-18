@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import './index.css'
 import Cookies from 'js-cookie'
@@ -10,12 +10,17 @@ const LoginPage = props => {
     const [showingPassword, setShowingPassword] = useState(false)
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate()
+    useEffect(() => {
+        let token = Cookies.get("jwtToken")
+        if (token !== undefined){
+            navigate('/')
+        }
+    }, [])
 
     const onShowingPassword = event => {
         setShowingPassword(event.target.checked)
     }
-
-    const navigate = useNavigate()
 
     const handlingUsername = event => {
         setUsername(event.target.value)
@@ -61,7 +66,7 @@ const LoginPage = props => {
                 </div>
                 <div className='button-container'>
                 <button className='login-button' type='submit'>Login</button>
-                <Link to="/signUp"><button className='login-button' type='button'>Sign Up</button></Link>
+                <button className='login-button' type='button'>Sign Up</button>
                 </div>
             </form>
         </div>

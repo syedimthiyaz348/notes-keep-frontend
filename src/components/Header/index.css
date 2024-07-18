@@ -8,6 +8,10 @@ nav{
     height: 35px;
 }
 
+.logout-button{
+    justify-self: flex-end;
+}
+
 .search-container{
     display: flex;
     justify-content: center;
