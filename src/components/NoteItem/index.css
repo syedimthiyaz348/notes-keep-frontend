@@ -1,0 +1,28 @@
+.note-container {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  height: 180px;
+  width: 250px;
+}
+.editing-icons {
+  display: none;
+}
+.edit-icon {
+  display: none;
+  justify-self: flex-end;
+}
+
+.note-container:hover {
+  .editing-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 0px 0px 0px;
+  }
+  .edit-icon {
+    display: flex;
+  }
+}

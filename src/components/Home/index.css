@@ -11,6 +11,30 @@
     padding: 20px;
 }
 
+.note-list-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    padding: 15px;
+}
+
+ul{
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+
+.note-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+}
+
 .note-input-container{
     height: 40px;
     width: 60%;

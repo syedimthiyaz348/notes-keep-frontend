@@ -1,0 +1,5 @@
+<div>
+                {createdData.map(eachCreatedData => (
+                  <NoteItem noteData={eachCreatedData} />
+                ))}
+              </div>
