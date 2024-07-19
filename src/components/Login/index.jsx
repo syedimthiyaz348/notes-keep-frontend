@@ -58,8 +58,8 @@ const LoginPage = props => {
         <div className="login-page-container">
             <h1>Login</h1>
             <form className='form-container' onSubmit={onLoggingIn}>
-                <input className='login-input' value={username} onChange={handlingUsername} placeholder='Username' id="username" type="text"/>
-                <input className='login-input' value={password} onChange={handlingPassword} placeholder='Password' id="password" type={changingPasswordType}/>
+                <input className='login-input' value='sampleuser1' onChange={handlingUsername} placeholder='Username' id="username" type="text"/>
+                <input className='login-input' value='sample@123' onChange={handlingPassword} placeholder='Password' id="password" type={changingPasswordType}/>
                 <div className='checkbox-container'>
                     <input onChange={onShowingPassword} id="showpassword" type='checkbox'/>
                     <label htmlFor='showpassword'>Show Password</label>
